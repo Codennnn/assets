@@ -17,7 +17,7 @@
 
 ## 如何使用
 
-### 通过jsDelivr访问GitHub上的图片
+### 通过 jsDelivr 访问 GitHub 上的图片
 
 基本格式:
 ```
@@ -40,16 +40,16 @@ https://cdn.jsdelivr.net/gh/username/assets@main/i/moment/照片名称.jpg
 
 ## 刷新缓存
 
-如果您更新了图片但CDN仍然提供旧版本，可以通过以下URL刷新缓存:
+如果您更新了图片但 CDN 仍然提供旧版本，可以通过以下 URL 刷新缓存:
 ```
 https://purge.jsdelivr.net/gh/username/assets@main/文件路径
 ```
 
 ## 注意事项
 
-- 建议使用特定的git标签或commit hash而不是分支名，以确保CDN缓存的稳定性
+- 建议使用特定的 git 标签或 commit hash 而不是分支名，以确保 CDN 缓存的稳定性
 - 不要删除已经发布的文件，以免破坏已有的引用
-- 图片格式优先考虑WebP、AVIF等现代压缩格式，以提供更好的性能
+- 图片格式优先考虑 WebP、AVIF 等现代压缩格式，以提供更好的性能
 
 ## 相关链接
 
