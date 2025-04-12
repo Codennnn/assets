@@ -26,8 +26,8 @@ https://cdn.jsdelivr.net/gh/用户名/仓库名@分支/文件路径
 
 例如，访问本仓库中的图片:
 ```
-https://cdn.jsdelivr.net/gh/username/assets@main/avatar/avatar1.webp
-https://cdn.jsdelivr.net/gh/username/assets@main/i/moment/照片名称.jpg
+https://cdn.jsdelivr.net/gh/[username]/assets@main/avatar/avatar1.webp
+https://cdn.jsdelivr.net/gh/[username]/assets@main/i/moment/照片名称.jpg
 ```
 
 ### 优势
@@ -42,7 +42,7 @@ https://cdn.jsdelivr.net/gh/username/assets@main/i/moment/照片名称.jpg
 
 如果您更新了图片但 CDN 仍然提供旧版本，可以通过以下 URL 刷新缓存:
 ```
-https://purge.jsdelivr.net/gh/username/assets@main/文件路径
+https://purge.jsdelivr.net/gh/[username]/assets@main/文件路径
 ```
 
 ## 注意事项
