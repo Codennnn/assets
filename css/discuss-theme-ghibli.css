@@ -1,0 +1,153 @@
+/*!
+ * Ghibli theme for Giscus, based on globals.css ghibli theme
+ * Copyright (c) 2024
+ */
+main {
+  /* 语法高亮颜色 - 根据 ghibli 风格调整 */
+  --color-prettylights-syntax-comment: #7e612f; /* 使用 --color-muted-foreground */
+  --color-prettylights-syntax-constant: #7f833a; /* 使用 --color-accent-border */
+  --color-prettylights-syntax-entity: #a3a85e; /* 使用 --color-accent */
+  --color-prettylights-syntax-storage-modifier-import: #614515; /* 使用 --color-foreground */
+  --color-prettylights-syntax-entity-tag: #7f833a; /* 使用 --color-accent-border */
+  --color-prettylights-syntax-keyword: #7e612f; /* 使用 --color-muted-foreground */
+  --color-prettylights-syntax-string: #a3a85e; /* 使用 --color-accent */
+  --color-prettylights-syntax-variable: #7e612f; /* 使用 --color-secondary */
+  --color-prettylights-syntax-brackethighlighter-unmatched: #614515; /* 使用 --color-foreground */
+  --color-prettylights-syntax-invalid-illegal-text: #fcf7f8; /* 使用 --color-accent-foreground */
+  --color-prettylights-syntax-invalid-illegal-bg: #614515; /* 使用 --color-foreground 暗化 */
+  --color-prettylights-syntax-carriage-return-text: #fcf7f8; /* 使用 --color-accent-foreground */
+  --color-prettylights-syntax-carriage-return-bg: #614515; /* 使用 --color-foreground 暗化 */
+  --color-prettylights-syntax-string-regexp: #a3a85e; /* 使用 --color-accent */
+  --color-prettylights-syntax-markup-list: #7e612f; /* 使用 --color-secondary */
+  --color-prettylights-syntax-markup-heading: #614515; /* 使用 --color-foreground */
+  --color-prettylights-syntax-markup-italic: #7e612f; /* 使用 --color-secondary */
+  --color-prettylights-syntax-markup-bold: #614515; /* 使用 --color-foreground */
+  --color-prettylights-syntax-markup-deleted-text: #fcf7f8; /* 使用 --color-accent-foreground */
+  --color-prettylights-syntax-markup-deleted-bg: #614515; /* 使用 --color-foreground 暗化 */
+  --color-prettylights-syntax-markup-inserted-text: #e5cea2; /* 使用 --color-muted */
+  --color-prettylights-syntax-markup-inserted-bg: #7e612f; /* 使用 --color-secondary */
+  --color-prettylights-syntax-markup-changed-text: #fcf7f8; /* 使用 --color-accent-foreground */
+  --color-prettylights-syntax-markup-changed-bg: #7e612f; /* 使用 --color-secondary */
+  --color-prettylights-syntax-markup-ignored-text: #e5cea2; /* 使用 --color-muted */
+  --color-prettylights-syntax-markup-ignored-bg: #a3a85e; /* 使用 --color-accent */
+  --color-prettylights-syntax-meta-diff-range: #a3a85e; /* 使用 --color-accent */
+  --color-prettylights-syntax-brackethighlighter-angle: #e5cea2; /* 使用 --color-muted */
+  --color-prettylights-syntax-sublimelinter-gutter-mark: #7e612f; /* 使用 --color-secondary */
+  --color-prettylights-syntax-constant-other-reference-link: #a3a85e; /* 使用 --color-accent */
+
+  /* 按钮相关颜色 */
+  --color-btn-text: #614515; /* 使用 --color-foreground */
+  --color-btn-bg: #e5cea2; /* 使用 --color-muted */
+  --color-btn-border: #c0a77e; /* 使用 --color-border */
+  --color-btn-shadow: 0 0 #0000;
+  --color-btn-inset-shadow: 0 0 #0000;
+  --color-btn-hover-bg: #c0a77e; /* 使用 --color-border */
+  --color-btn-hover-border: #7e612f; /* 使用 --color-secondary */
+  --color-btn-active-bg: #c0a77e; /* 使用 --color-border */
+  --color-btn-active-border: #614515; /* 使用 --color-foreground */
+  --color-btn-selected-bg: #e5cea2; /* 使用 --color-muted */
+
+  /* 主要按钮颜色 */
+  --color-btn-primary-text: #fcf7f8; /* 使用 --color-accent-foreground */
+  --color-btn-primary-bg: #a3a85e; /* 使用 --color-accent */
+  --color-btn-primary-border: #7f833a; /* 使用 --color-accent-border */
+  --color-btn-primary-shadow: 0 0 #0000;
+  --color-btn-primary-inset-shadow: 0 0 #0000;
+  --color-btn-primary-hover-bg: #7f833a; /* 使用 --color-accent-border */
+  --color-btn-primary-hover-border: #614515; /* 使用 --color-foreground */
+  --color-btn-primary-selected-bg: #a3a85e; /* 使用 --color-accent */
+  --color-btn-primary-selected-shadow: 0 0 #0000;
+  --color-btn-primary-disabled-text: rgb(
+    252 247 248 / 50%
+  ); /* 使用 --color-accent-foreground 半透明 */
+
+  --color-btn-primary-disabled-bg: rgb(163 168 94 / 60%); /* 使用 --color-accent 半透明 */
+  --color-btn-primary-disabled-border: rgb(
+    127 131 58 / 60%
+  ); /* 使用 --color-accent-border 半透明 */
+
+  /* 其他控件颜色 */
+  --color-action-list-item-default-hover-bg: rgb(126 97 47 / 10%); /* --color-secondary 低透明度 */
+  --color-segmented-control-bg: rgb(192 167 126 / 10%); /* --color-border 低透明度 */
+  --color-segmented-control-button-bg: #f1dfbe; /* 使用 --color-background */
+  --color-segmented-control-button-selected-border: #c0a77e; /* 使用 --color-border */
+
+  /* 前景色和背景色 */
+  --color-fg-default: #614515; /* 使用 --color-foreground */
+  --color-fg-muted: #7e612f; /* 使用 --color-secondary */
+  --color-fg-subtle: #7e612f; /* 使用 --color-muted-foreground */
+  --color-canvas-default: #f1dfbe; /* 使用 --color-background */
+  --color-canvas-overlay: #e5cea2; /* 使用 --color-muted */
+  --color-canvas-inset: #e5cea2; /* 使用 --color-muted */
+  --color-canvas-subtle: #f1dfbe; /* 使用 --color-background 亮一点 */
+
+  /* 边框颜色 */
+  --color-border-default: #c0a77e; /* 使用 --color-border */
+  --color-border-muted: #e5cea2; /* 使用 --color-muted */
+  --color-neutral-muted: rgb(126 97 47 / 40%); /* --color-secondary 中等透明度 */
+
+  /* 强调色 */
+  --color-accent-fg: #a3a85e; /* 使用 --color-accent */
+  --color-accent-emphasis: #7f833a; /* 使用 --color-accent-border */
+  --color-accent-muted: rgb(163 168 94 / 40%); /* --color-accent 中等透明度 */
+  --color-accent-subtle: rgb(163 168 94 / 10%); /* --color-accent 低透明度 */
+
+  /* 状态颜色 */
+  --color-success-fg: #7f833a; /* 使用 --color-accent-border */
+  --color-attention-fg: #7e612f; /* 使用 --color-secondary */
+  --color-attention-muted: rgb(126 97 47 / 40%); /* --color-secondary 中等透明度 */
+  --color-attention-subtle: rgb(126 97 47 / 10%); /* --color-secondary 低透明度 */
+  --color-danger-fg: #614515; /* 使用 --color-foreground */
+  --color-danger-muted: rgb(97 69 21 / 40%); /* --color-foreground 中等透明度 */
+  --color-danger-subtle: rgb(97 69 21 / 10%); /* --color-foreground 低透明度 */
+
+  /* 阴影 */
+  --color-primer-shadow-inset: 0 0 #0000;
+
+  /* 比例颜色 */
+  --color-scale-gray-7: #c0a77e; /* 使用 --color-border */
+  --color-scale-blue-8: #7f833a; /* 使用 --color-accent-border */
+
+  /*! Extensions from @primer/css/alerts/flash.scss */
+  --color-social-reaction-bg-hover: var(--color-scale-gray-7);
+  --color-social-reaction-bg-reacted-hover: var(--color-scale-blue-8);
+}
+
+/* 自定义加载图像 - 可以根据需要替换为更适合 ghibli 风格的图像 */
+main .pagination-loader-container {
+  background-image: url('https://github.com/images/modules/pulls/progressive-disclosure-line.svg');
+}
+
+/*! Custom CSS */
+.gsc-reactions-count {
+  display: none;
+}
+
+.gsc-timeline {
+  flex-direction: column-reverse;
+}
+
+.gsc-header {
+  padding-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-header {
+  order: 1;
+}
+
+.gsc-comments > .gsc-comment-box {
+  order: 2;
+  margin-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-timeline {
+  order: 3;
+}
+
+.gsc-homepage-bg {
+  background-color: #f1dfbe; /* 使用 --color-background */
+}
+
+main .gsc-loading-image {
+  background-image: url('https://github.githubassets.com/images/mona-loading-default.gif');
+}
