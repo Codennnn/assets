@@ -1,10 +1,11 @@
 # Assets 图片资源库
 
-这个仓库用于存储和提供通过 jsDelivr CDN 加速访问的图片资源。
+这个仓库用于存储和提供通过 jsDelivr CDN 加速访问的静态文件资源。
 
 ## 项目用途
 
 本项目主要用于：
+
 - 利用 [jsDelivr](https://www.jsdelivr.com/) 作为免费的内容分发网络(CDN)
 - 为博客、网站或应用程序提供快速的图片加载体验
 - 全球范围内的资源访问加速
@@ -13,18 +14,24 @@
 ## 目录结构
 
 - `/avatar`: 存储头像图片
-- `/i/moment`: 存储照片和其他图片资源
+- `/css`: 存储样式表（主题/页面样式）
+- `/fonts`: 存储网页字体文件（.woff2 等），当前包含 HarmonyOS Sans SC 与 MapleMono 系列
+- `/i`: 通用图片资源父目录
+  - `/i/moment`: 存储照片、相册类图片等
+  - `/i/og`: 存储 Open Graph/社交分享预览图
 
 ## 如何使用
 
 ### 通过 jsDelivr 访问 GitHub 上的图片
 
 基本格式:
+
 ```
 https://cdn.jsdelivr.net/gh/用户名/仓库名@分支/文件路径
 ```
 
 例如，访问本仓库中的图片:
+
 ```
 https://cdn.jsdelivr.net/gh/[username]/assets@main/avatar/avatar1.webp
 https://cdn.jsdelivr.net/gh/[username]/assets@main/i/moment/照片名称.jpg
@@ -41,6 +48,7 @@ https://cdn.jsdelivr.net/gh/[username]/assets@main/i/moment/照片名称.jpg
 ## 刷新缓存
 
 如果您更新了图片但 CDN 仍然提供旧版本，可以通过以下 URL 刷新缓存:
+
 ```
 https://purge.jsdelivr.net/gh/[username]/assets@main/文件路径
 ```
@@ -54,4 +62,4 @@ https://purge.jsdelivr.net/gh/[username]/assets@main/文件路径
 ## 相关链接
 
 - [jsDelivr官网](https://www.jsdelivr.com/)
-- [jsDelivr文档](https://www.jsdelivr.com/documentation) 
+- [jsDelivr文档](https://www.jsdelivr.com/documentation)
