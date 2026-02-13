@@ -1,65 +1,52 @@
-# Assets 图片资源库
+# Assets 静态资源库
 
-这个仓库用于存储和提供通过 jsDelivr CDN 加速访问的静态文件资源。
+这个仓库用于存储和提供通过 **GitHub Pages** 托管访问的静态文件资源。
 
 ## 项目用途
 
 本项目主要用于：
 
-- 利用 [jsDelivr](https://www.jsdelivr.com/) 作为免费的内容分发网络(CDN)
-- 为博客、网站或应用程序提供快速的图片加载体验
-- 全球范围内的资源访问加速
-- 提供稳定可靠的图片链接
+- 利用 [GitHub Pages](https://pages.github.com/) 托管静态资源
+- 为博客、网站或应用程序提供图片、字体、CSS 等资源
+- 通过自定义域名提供稳定可靠的资源链接
 
 ## 目录结构
 
 - `/avatar`: 存储头像图片
 - `/css`: 存储样式表（主题/页面样式）
-- `/fonts`: 存储网页字体文件（.woff2 等），当前包含 HarmonyOS Sans SC 与 MapleMono 系列
+- `/fonts`: 存储网页字体文件（.woff2 等），当前包含 vivoSans、HarmonyOS Sans SC 与 MapleMono 系列
 - `/i`: 通用图片资源父目录
   - `/i/moment`: 存储照片、相册类图片等
   - `/i/og`: 存储 Open Graph/社交分享预览图
+- `/logos`: 存储 Logo 图片
 
 ## 如何使用
 
-### 通过 jsDelivr 访问 GitHub 上的图片
+### 通过自定义域名访问资源
 
 基本格式:
 
 ```
-https://cdn.jsdelivr.net/gh/用户名/仓库名@分支/文件路径
+https://assets.leoku.top/文件路径
 ```
 
-例如，访问本仓库中的图片:
+例如，访问本仓库中的资源:
 
 ```
-https://cdn.jsdelivr.net/gh/[username]/assets@main/avatar/avatar1.webp
-https://cdn.jsdelivr.net/gh/[username]/assets@main/i/moment/照片名称.jpg
-```
-
-### 优势
-
-1. **全球加速**: jsDelivr拥有全球超过500个节点，提供快速的访问速度
-2. **永久缓存**: 一旦文件发布，CDN会永久缓存
-3. **免费使用**: 对开源项目完全免费
-4. **自动压缩**: 自动提供文件压缩和优化
-5. **防盗链功能**: 保护您的资源不被盗用
-
-## 刷新缓存
-
-如果您更新了图片但 CDN 仍然提供旧版本，可以通过以下 URL 刷新缓存:
-
-```
-https://purge.jsdelivr.net/gh/[username]/assets@main/文件路径
+https://assets.leoku.top/avatar/avatar1.webp
+https://assets.leoku.top/i/moment/照片名称.jpg
+https://assets.leoku.top/fonts/vivoSans-Regular.woff2
+https://assets.leoku.top/css/discuss-theme-dark.css
 ```
 
 ## 注意事项
 
-- 建议使用特定的 git 标签或 commit hash 而不是分支名，以确保 CDN 缓存的稳定性
-- 不要删除已经发布的文件，以免破坏已有的引用
-- 图片格式优先考虑 WebP、AVIF 等现代压缩格式，以提供更好的性能
+- GitHub Pages 有每月 100GB 的带宽限制（软限制）
+- 单文件大小限制为 100MB
+- 资源更新后可能需要清除浏览器缓存才能看到最新版本
+- 建议为重要资源使用版本控制（如 Git tag）
 
 ## 相关链接
 
-- [jsDelivr官网](https://www.jsdelivr.com/)
-- [jsDelivr文档](https://www.jsdelivr.com/documentation)
+- [GitHub Pages 文档](https://docs.github.com/en/pages)
+- [GitHub Pages 使用限制](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#usage-limits)
