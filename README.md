@@ -27,16 +27,16 @@
 基本格式:
 
 ```
-https://assets.leoku.top/文件路径
+https://assets.leoku.dev/文件路径
 ```
 
 例如，访问本仓库中的资源:
 
 ```
-https://assets.leoku.top/avatar/avatar1.webp
-https://assets.leoku.top/i/moment/照片名称.jpg
-https://assets.leoku.top/fonts/vivoSans-Regular.woff2
-https://assets.leoku.top/css/discuss-theme-dark.css
+https://assets.leoku.dev/avatar/avatar1.webp
+https://assets.leoku.dev/i/moment/照片名称.jpg
+https://assets.leoku.dev/fonts/vivoSans-Regular.woff2
+https://assets.leoku.dev/css/discuss-theme-dark.css
 ```
 
 ## 注意事项
